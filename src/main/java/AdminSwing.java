@@ -12,7 +12,7 @@ import java.net.Socket;
  * Swing interface for Admin.java
  * - Connect to server (IP + Port)
  * - Send "ADMMIN" handshake
- * - Buttons: Shut Down (asks for password), Disconnect, Exit
+ * - Buttons: Shut Down (asks for password(Which is: cardiolink_admin_pass)), Disconnect: Exit
  * - Live log area for server responses
  *
  * Drop this file alongside your project and run the main().
