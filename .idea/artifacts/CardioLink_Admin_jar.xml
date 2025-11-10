@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CardioLink_Admin:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CardioLink_Admin_jar</output-path>
+    <root id="archive" name="CardioLink_Admin.jar">
+      <element id="module-output" name="CardioLink_Admin" />
+      <element id="module-test-output" name="CardioLink_Admin" />
+    </root>
+  </artifact>
+</component>
