@@ -159,10 +159,10 @@ public class AdminSwing extends JFrame {
                 in = new DataInputStream(socket.getInputStream());
                 out = new DataOutputStream(socket.getOutputStream());
 
-                // handshake literal must match your server ("ADMIN" per your log)
+
                 out.writeUTF("ADMIN");
                 out.flush();
-                append("Conexion request sent: ADMIN");
+                append("Connexion request sent: ADMIN");
 
                 // reset flags for this session
                 closing.set(false);
