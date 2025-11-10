@@ -132,7 +132,8 @@ public class AdminSwing extends JFrame {
         String portStr = portField.getText().trim();
 
         if (!isValidIPv4(ip)) {
-            append("Invalid IP address: " + ip);
+            append("Invalid IP address: " + ip + ". Check for errors.");
+            append("It should be in IPv4 format (e.g. 192.168.0.1 or 103.101.101.103) or 'localhost' if the Server is running from this computer.");
             return;
         }
         int port;
@@ -141,6 +142,7 @@ public class AdminSwing extends JFrame {
             if (port < 1 || port > 65535) throw new NumberFormatException();
         } catch (NumberFormatException ex) {
             append("Invalid port: " + portStr);
+            append("Port should be between 1 and 65535.");
             return;
         }
 
